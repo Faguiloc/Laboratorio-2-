@@ -5,6 +5,13 @@ import pyDes
 from time import sleep
 #cliente(Marley)
 
+
+#**********************IMPORTANTE***********************#
+#  Es necesario instalar la libreria pyDes para que el  #
+#             Codigo funcione sin problemas.            #
+#*******************************************************#
+
+
 def EncriptadoDES():
     texto= open('mensajeentrada.txt',"r")
     llave= pyDes.des("abcdefgh",padmode=pyDes.PAD_PKCS5)    #Se asigna la clave y se activa el modo de padding para rellenar cualquier caracter faltante
