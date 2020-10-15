@@ -6,6 +6,11 @@ import struct
 import time
 # Servidor (Bob)
 
+#**********************IMPORTANTE***********************#
+#  Es necesario instalar la libreria pyDes para que el  #
+#             Codigo funcione sin problemas.            #
+#*******************************************************#
+
 
 def DesencriptadoDES(mensaje):
     llave= pyDes.des("abcdefgh",padmode=pyDes.PAD_PKCS5)            #Se desencripta el mensaje
